@@ -1,0 +1,183 @@
+:root{
+    --darker-purple: #0e091a;
+    --dark-purple: #18102c;
+    --pink: #fc2cff;
+    --pink-whi:#fd81ff;
+    --aqua: #32fff8;
+    --aqua-whi:#6cfffa;
+    --white: #ffffff;
+    --gradient: linear-gradient(129deg, rgba(252,44,255,1) 15%, rgba(50,255,248,1) 100%);
+    --transition-speed: 400ms;
+}
+
+/* ########## */
+/* # COLORS # */
+/* ########## */
+
+/* Tab text colors */
+.nav-item span{
+    color: #ffffff;
+}
+
+/* Logo text colors */
+.nav-logo span{
+    background: linear-gradient(231deg, rgba(252,44,255,1) 10%, rgb(96, 255, 250) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Icon colors */
+.svg-pri{ fill: var(--pink-whi); }
+.svg-sec{ fill: var(--aqua-whi); }
+
+
+/* ############### */
+/* # POSITIONING # */
+/* ############### */
+
+.navbar {
+    padding-left: 1rem;
+    position: fixed;
+    transition: width 600ms ease;
+    overflow: hidden;
+    user-select: none;
+}
+  
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+  
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition-speed);
+}
+
+.nav-item .nav-link{
+    filter: grayscale(100%) opacity(0.7);
+}
+  
+.nav-item .nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var();
+    color: var();
+}
+  
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-item svg{
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.nav-logo .nav-link img {
+    width: 4rem;
+    min-width: 4rem;
+    margin: 0 .5rem;
+    margin-top: .5rem;
+}
+  
+.svg-pri, .svg-sec{
+    transition: var(--transition-speed);
+}
+  
+.nav-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0 1.5rem 0;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.nav-logo img{
+    width: 5rem;
+    margin: 0 1.5rem;
+    transition: var(--transition-speed);
+}
+  
+.nav-logo-text{
+    display: none;
+    transition: var(--transition-speed);
+    margin-top: 2.5rem;
+}
+
+/* ##################### */
+/* # REACTIVE DISPLAYS # */
+/* ##################### */
+
+/* Mobile Display */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        background: linear-gradient(180deg, rgba(24,16,44,1) 0%, rgba(14,9,26,1) 10%, rgba(14,9,26,1) 100%);;
+        margin: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+  
+    .nav-logo {
+        display: none;
+    }
+  
+    .navbar-nav {
+        flex-direction: row;
+    }
+  
+    .nav-link {
+        justify-content: center;
+    }
+  
+    main {
+        margin: 0;
+    }
+}
+  
+/* Computer Display # */
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+  
+    .navbar:hover {
+        width: 20rem;
+        background: linear-gradient(270deg, rgba(24,16,44,1) 0%, rgba(14,9,26,1) 10%, rgba(14,9,26,1) 100%);
+    }
+  
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .nav-logo-text{
+        display: inline;
+    }
+  
+    .navbar:hover .nav-logo-text
+    {
+        left: 0px;
+    }
+
+}

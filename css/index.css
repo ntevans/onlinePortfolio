@@ -3,6 +3,7 @@
     --dark-purple: #18102c;
     --pink: #fc2cff;
     --aqua: #32fff8;
+    --gradient: linear-gradient(129deg, rgba(252,44,255,1) 10%, rgba(50,255,248,1) 100%);
 }
 
 body{
@@ -16,46 +17,20 @@ body{
 /* Firefox */
 * {
 scrollbar-width: auto;
-scrollbar-color: #2a1c4e #ffffff;
+scrollbar-color: transparent ;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-width: 12px;
+    width: .75rem;
 }
 
 *::-webkit-scrollbar-thumb {
-background-color: #352363;
-border-radius: 10px;
-border: 3px solid var(--dark-purple);
+    background-color: #352363;
+    border-radius: 10px;
+    border: 0.2rem solid var(--dark-purple);
 }
 
 #indexPage{
     height: 5000px;
-}
-
-
-
-
-
-
-
-
-
-
-.navbar{
-    width: 5rem;
-    height: 100vh;
-    position: fixed;
-    border: 5px solid white;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;*/
-}
-
-
-#header h1{
-    font-size: 200px;
-    color: white;
 }
