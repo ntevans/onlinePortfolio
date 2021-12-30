@@ -1,0 +1,183 @@
+:root{
+    --darker-purple: #0e091a;
+    --dark-purple: #18102c;
+    --pink: #fc2cff;
+    --aqua: #32fff8;
+}
+
+/* || LOADING SCREEN  */
+
+#loadingScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--darker-purple);
+    /*animation: fadeOut .5s ease 4s forwards;
+    -webkit-animation: fadeOut .5s ease 4s forwards;*/
+}
+
+#load_cw{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,transparent,transparent 40%, var(--pink));
+    animation: spin_cw 2s linear infinite, fadeOut 0.5s ease 3s forwards;
+    -webkit-animation: spin_cw 2s linear infinite, fadeOut 0.5s ease 3s forwards;
+}
+
+#load_cw::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: var(--darker-purple);
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#load_cw::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg,transparent,transparent 40%, var(--pink));
+    border-radius: 50%;
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+#load_ccw{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,transparent,transparent 40%, var(--aqua));
+    animation: spin_ccw 2s linear infinite, fadeOut 0.5s ease 3.5s forwards;
+    -webkit-animation: spin_ccw 2s linear infinite, fadeOut 0.5s ease 3.5s forwards;
+}
+
+#load_ccw::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: var(--darker-purple);
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#load_ccw::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg,transparent,transparent 40%, var(--aqua));
+    border-radius: 50%;
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+#logo_color{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(-39deg, rgba(50,255,248,1) 0%, rgba(252,44,255,1) 10%, rgba(50,255,248,1) 20%, rgba(252,44,255,1) 30%, rgba(50,255,248,1) 40%, rgba(252,44,255,1) 50%, rgba(50,255,248,1) 60%, rgba(252,44,255,1) 70%, rgba(50,255,248,1) 80%, rgba(252,44,255,1) 90%, rgba(50,255,248,1) 100%);
+    background-size: 400% 400%;
+    animation: logo_cycle 3s ease infinite, fadeOut 0.5s ease 4s forwards/*, shrink 0.5s ease 4s forwards*/;
+    -webkit-animation: logo_cycle 3s ease infinite, fadeOut 0.5s ease 4s forwards/*, shrink 0.5s ease 4s forwards*/;
+    z-index: 2;
+}
+
+#loadingScreen img{
+    height: 150px;
+    pointer-events: none;
+    position: absolute;
+}
+
+#logo_trace{
+    z-index: 3;
+}
+
+#N-logo{
+    opacity: 0%;
+    z-index: 4;
+    animation: fadeIn 0.5s ease 4s forwards, resize 1s ease 5s forwards;
+}
+
+@keyframes spin_cw{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes spin_ccw{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes fadeOut{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes logo_cycle{
+    0%{background-position:0% 67%;}
+    50%{background-position:100% 34%}
+    100%{background-position:0% 67%}
+}
+
+@keyframes shrink{
+    0%{}
+    100%{height: 0%;}
+}
+
+@keyframes resize{
+    0%{height: 150px; width: 150px;}
+    100%{height: 100px; width: 100px;}
+}
+
+@-webkit-keyframes spin_cw{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spin_ccw{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@-webkit-keyframes fadeOut{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+@-webkit-keyframes logo_cycle{
+    0%{background-position:0% 67%;}
+    50%{background-position:100% 34%}
+    100%{background-position:0% 67%}
+}
+
+@-webkit-keyframes shrink{
+    0%{}
+    100%{height: 0%;}
+}
+
+/* ------- */
+/* LOADING */
+/* ------- */
