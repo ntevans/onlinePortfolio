@@ -13,8 +13,8 @@
     align-items: center;
     min-height: 100vh;
     background-color: var(--darker-purple);
-    /*animation: fadeOut .5s ease 4s forwards;
-    -webkit-animation: fadeOut .5s ease 4s forwards;*/
+    animation: fadeOut .5s ease 4s forwards;
+    -webkit-animation: fadeOut .5s ease 4s forwards;
 }
 
 #load_cw{
@@ -90,13 +90,14 @@
 }
 
 #logo_color{
-    position: absolute;
     width: 150px;
     height: 150px;
-    background: linear-gradient(-39deg, rgba(50,255,248,1) 0%, rgba(252,44,255,1) 10%, rgba(50,255,248,1) 20%, rgba(252,44,255,1) 30%, rgba(50,255,248,1) 40%, rgba(252,44,255,1) 50%, rgba(50,255,248,1) 60%, rgba(252,44,255,1) 70%, rgba(50,255,248,1) 80%, rgba(252,44,255,1) 90%, rgba(50,255,248,1) 100%);
+    position: absolute;
+    background: linear-gradient(129deg, rgba(50,255,248,1) 0%, rgba(252,44,255,1) 20%, rgba(50,255,248,1) 40%, rgba(252,44,255,1) 60%, rgba(50,255,248,1) 80%, rgba(252,44,255,1) 100%);
+
     background-size: 400% 400%;
-    animation: logo_cycle 3s ease infinite, fadeOut 0.5s ease 4s forwards/*, shrink 0.5s ease 4s forwards*/;
-    -webkit-animation: logo_cycle 3s ease infinite, fadeOut 0.5s ease 4s forwards/*, shrink 0.5s ease 4s forwards*/;
+    animation: logo_cycle 3s ease infinite, shrink 0.5s ease 4s forwards;
+    -webkit-animation: logo_cycle 3s ease infinite, shrink 0.5s ease 4s forwards;
     z-index: 2;
 }
 
@@ -110,10 +111,29 @@
     z-index: 3;
 }
 
-#N-logo{
+.navbar{
     opacity: 0%;
-    z-index: 4;
-    animation: fadeIn 0.5s ease 4s forwards, resize 1s ease 5s forwards;
+    animation: fadeIn .5s ease 0.5s forwards, slideIn-left 1s ease forwards;
+}
+
+#particles-js{
+    opacity: 0%;
+    animation: fadeIn 3s ease 1s forwards;
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes slideIn-left{
+    0%{transform: translateX(-8rem);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes slideIn-bottom{
+    0%{transform: translateY(-8rem);}
+    100%{transform: translateY(0);}
 }
 
 @keyframes spin_cw{
@@ -145,11 +165,6 @@
 @keyframes shrink{
     0%{}
     100%{height: 0%;}
-}
-
-@keyframes resize{
-    0%{height: 150px; width: 150px;}
-    100%{height: 100px; width: 100px;}
 }
 
 @-webkit-keyframes spin_cw{

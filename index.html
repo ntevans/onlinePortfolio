@@ -15,14 +15,12 @@
     <script src="https://kit.fontawesome.com/87adbb40e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-	  <script src="index.js"></script>
 
     <div id="loadingScreen">
       <div id="load_cw"></div>
       <div id="load_ccw"></div>
       <div id="logo_color" class="load_logo"></div>
       <img src="img/logo_trace.png" id="logo_trace" class="load_logo" alt="">
-      <img src="img/N-logo.png" id="N-logo" alt="">
       
     </div>
     
@@ -70,22 +68,31 @@
       </nav>
 
       <main>
-
+        <div id="particles-js"></div>
+        <div class="intro">
+          <h1>Nicholas Evans</h1>
+          <h2></h2>
+        </div>
+    
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
       </main>
     </div>
 
     <script>
       var myVar;
-      myFunction()
+      myFunction();
 
       function myFunction(){
-        myVar = setTimeout(showPage, 00); // 4500
+        myVar = setTimeout(showPage, 000); // 4500
       }
 
       function showPage(){
         document.getElementById("loadingScreen").style.display = "none";
         document.getElementById("indexPage").style.display = "block";
+        window.dispatchEvent(new Event('resize'));
       }
+
     </script>
 
   </body>

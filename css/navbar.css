@@ -17,6 +17,7 @@
 /* Tab text colors */
 .nav-item span{
     color: #ffffff;
+    font-size: 20px;
 }
 
 /* Logo text colors */
@@ -42,6 +43,7 @@
     transition: width 600ms ease;
     overflow: hidden;
     user-select: none;
+    z-index: 100;
 }
   
 .navbar-nav {
@@ -130,7 +132,7 @@
 /* Mobile Display */
 @media only screen and (max-width: 600px) {
     .navbar {
-        background: linear-gradient(180deg, rgba(24,16,44,1) 0%, rgba(14,9,26,1) 10%, rgba(14,9,26,1) 100%);;
+        background: linear-gradient(180deg, transparent 0%, rgba(14,9,26,1) 10%, rgba(14,9,26,1) 100%);;
         margin: 0;
         bottom: 0;
         width: 100vw;
@@ -164,7 +166,7 @@
   
     .navbar:hover {
         width: 20rem;
-        background: linear-gradient(270deg, rgba(24,16,44,1) 0%, rgba(14,9,26,1) 10%, rgba(14,9,26,1) 100%);
+        background: linear-gradient(270deg, transparent 0%, rgba(14,9,26,1) 10%, rgba(14,9,26,1) 100%);
     }
   
     .navbar:hover .link-text {
