@@ -1,5 +1,6 @@
 :root{
     --darker-purple: #0e091a;
+    --darkish-purple:#130c24;
     --dark-purple: #18102c;
     --pink: #fc2cff;
     --aqua: #32fff8;
@@ -32,14 +33,16 @@ scrollbar-color: transparent ;
     border: 0.2rem solid var(--dark-purple);
 }
 
-#indexPage{
-    height: 5000px;
+.visible{
+    opacity: 100%;
 }
 
-#particles-js{
-    width: 100%;
-    height: 100vh;
-    margin-left: 7rem;
+.invisible{
+    opacity: 0%;
+}
+
+
+#indexPage{
 }
 
 @media only screen and (max-width: 600px) {
@@ -48,11 +51,11 @@ scrollbar-color: transparent ;
     }
 }
 
-main{
+#home{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
 }
 
 .intro{
@@ -62,9 +65,55 @@ main{
     height: 40rem;
     width: 60rem;  
     pointer-events: none;
+    z-index: 3;
 }
 
 .intro h1{
     font-size: 6rem;
     color: #ffffff;
+}
+
+#cover{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: var(--dark-purple);
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    margin-left: 7rem;
+    margin-right: 5rem;
+    z-index: 1;
+}
+
+#about{
+    /*background: linear-gradient(0deg, transparent 0%, rgba(19,12,36,1) 3%, rgba(19,12,36,1) 97%, transparent 100%);*/
+    height: 100vh;
+}
+
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

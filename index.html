@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/87adbb40e6.js" crossorigin="anonymous"></script>
+    <script src="js/jQuery_v3.6.0.js"></script>
   </head>
   <body>
 
@@ -68,10 +69,26 @@
       </nav>
 
       <main>
-        <div id="particles-js"></div>
-        <div class="intro">
-          <h1>Nicholas Evans</h1>
-          <h2></h2>
+        <div id="home">
+          <div class="intro">
+            <h1>Nicholas Evans</h1>
+            <h2></h2>
+          </div>
+          <div id="cover" class="invisible"></div>
+          <div id="particles-js"></div>
+        </div>
+        
+        <div id="about">
+
+        </div>
+        <div id="skills">
+
+        </div>
+        <div id="projects">
+
+        </div>
+        <div id="contact">
+
         </div>
     
         <script src="js/particles.js"></script>
@@ -81,6 +98,7 @@
 
     <script>
       var myVar;
+      scrollPercent = 0;
       myFunction();
 
       function myFunction(){
@@ -92,6 +110,24 @@
         document.getElementById("indexPage").style.display = "block";
         window.dispatchEvent(new Event('resize'));
       }
+
+      $(window).bind('scroll', function() {
+
+        var s = $(window).scrollTop(),
+            d = $(document).height(),
+            c = $(window).height();
+
+        var scrollPercent = (s / (d - c)) * 100;
+        
+        if (scrollPercent > 15) {
+            $('#cover').addClass('visible');
+            $('#cover').removeClass('invisible');
+          }
+        else {
+          $('#cover').removeClass('visible');
+            $('#cover').addClass('invisible');
+        }
+      });
 
     </script>
 
