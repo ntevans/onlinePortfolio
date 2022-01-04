@@ -4,7 +4,7 @@ My personal portfolio that I created using HTML, CSS, and JavaScript. This websi
 ## Progress
 - [X] Intro Animation
 - [X] Navbar
-- [ ] Contact Navbar
+- [X] Contact Navbar
 - [X] Landing Screen
 - [ ] About Section
 - [ ] Skills Section
