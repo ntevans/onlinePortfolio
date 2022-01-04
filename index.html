@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/loadingScreen.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/87adbb40e6.js" crossorigin="anonymous"></script>
     <script src="js/jQuery_v3.6.0.js"></script>
@@ -67,12 +67,17 @@
           </li>
         </ul>
       </nav>
+      <div class="conbar">
+        
+      </div>
 
       <main>
         <div id="home">
           <div class="intro">
             <h1>Nicholas Evans</h1>
-            <h2></h2>
+            <h2>Computer Engineering Student at Texas A&M University</h2>
+            <a>Resume</a>
+
           </div>
           <div id="cover" class="invisible"></div>
           <div id="particles-js"></div>
@@ -118,7 +123,7 @@
             c = $(window).height();
 
         var scrollPercent = (s / (d - c)) * 100;
-        
+
         if (scrollPercent > 15) {
             $('#cover').addClass('visible');
             $('#cover').removeClass('invisible');
