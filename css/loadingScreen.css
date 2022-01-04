@@ -116,6 +116,11 @@
     animation: fadeIn .5s ease 0.5s forwards, slideIn-left 1s ease forwards;
 }
 
+.conbar{
+    opacity: 0%;
+    animation: fadeIn .5s ease 1s forwards, slideIn-right 1.5s ease forwards;
+}
+
 .intro h1{
     opacity: 0%;
     animation: fadeIn .5s ease 1.5s forwards, slideIn-bottom 1s ease 1s forwards;
@@ -143,6 +148,11 @@
 
 @keyframes slideIn-left{
     0%{transform: translateX(-8rem);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes slideIn-right{
+    0%{transform: translateX(8rem);}
     100%{transform: translateX(0);}
 }
 
