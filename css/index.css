@@ -57,7 +57,7 @@ scrollbar-color: transparent ;
 .intro{
     position: absolute;
     justify-content: center;
-    height: 28rem;
+    height: 26rem;
     width: 45rem;  
     pointer-events: none;
     z-index: 3;
