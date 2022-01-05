@@ -60,6 +60,11 @@
     width: 100%;
 }
 
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
 .nav-link {
     display: flex;
     align-items: center;
@@ -154,6 +159,11 @@
     main {
         margin: 0;
     }
+
+    .nav-item:last-child{
+        display: none;
+    }
+
 }
   
 /* Computer Display # */

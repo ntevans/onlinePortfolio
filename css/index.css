@@ -15,7 +15,10 @@ body{
     overflow-x: hidden;
 }
 
-/* ===== Scrollbar CSS ===== */
+/* ############## */
+/* # SCROLL BAR # */
+/* ############## */
+
 /* Firefox */
 * {
 scrollbar-width: auto;
@@ -46,6 +49,10 @@ scrollbar-color: transparent ;
         margin-left: 0;
     }
 }
+
+/* ######## */
+/* # HOME # */
+/* ######## */
 
 #home{
     display: flex;
@@ -115,9 +122,17 @@ scrollbar-color: transparent ;
     z-index: 1;
 }
 
+/* ######### */
+/* # ABOUT # */
+/* ######### */
+
 #about{
     height: 100vh;
 }
+
+/* ########## */
+/* # SKILLS # */
+/* ########## */
 
 #skills{
     display: flex;
@@ -126,12 +141,20 @@ scrollbar-color: transparent ;
     height: 100vh;
 }
 
+/* ############ */
+/* # PROJECTS # */
+/* ############ */
+
 #projects{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
+/* ########### */
+/* # CONTACT # */
+/* ########### */
 
 #contact{
     display: flex;

@@ -125,3 +125,10 @@
 /* ##################### */
 /* # REACTIVE DISPLAYS # */
 /* ##################### */
+
+/* Mobile Display */
+@media only screen and (max-width: 600px) {
+    .conbar{
+        display: none;
+    }
+}
