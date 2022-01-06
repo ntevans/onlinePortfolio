@@ -141,6 +141,11 @@
     animation: fadeIn 3s ease 2s forwards;
 }
 
+#learn-more{
+    opacity: 0%;
+    animation: fadeIn 1s ease 4s forwards;
+}
+
 @keyframes fadeIn{
     0%{opacity: 0%;}
     100%{opacity: 100%;}
