@@ -149,12 +149,96 @@ scrollbar-color: transparent ;
     z-index: 1;
 }
 
+@media only screen and (max-width: 600px) {
+    #home{
+        text-align: center;
+    }
+
+    .intro h1{
+        font-size: 3.5rem;
+        margin-top: 3rem;
+    }
+
+    .intro h2{
+        font-size: 1rem;
+        border: 5px solid transparent;
+        margin-top: -1rem;
+    }
+
+    #learn-more{
+        margin-bottom: 5rem;
+    }
+
+    #particles-js{
+        margin: 0;
+    }
+}
+
 /* ######### */
 /* # ABOUT # */
 /* ######### */
 
 #about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    border: 5px solid white;
+}
+
+#about-container{
+    position: absolute;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 70rem;
+    height: 40rem;
+    border: 5px solid red;
+}
+
+#about-txt{
+    height: 100%;
+    border: 5px solid blue;
+}
+
+#about-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 5px solid green;
+    transition: 0.5s ease;
+}
+
+#about-img img:hover{
+    /*
+    box-shadow: 1px 1px #373737, 2px 2px #373737, 3px 3px #373737, 4px 4px #373737, 5px 5px #373737, 6px 6px #373737;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: 0.5s ease;
+    */
+}
+
+#about-img img{
+    background: red;
+    border-radius: 10px;
+    width: 20rem;
+    opacity: 0;
+}
+
+
+#about-img .img-container{
+    background-image: url(/img/about/veryAttractivePerson-filter.png);
+    border: 5px solid yellow;
+    height: 20rem; width: 20rem;
+}
+
+#about-img .ab-img-1{
+    z-index: 2;
+}
+
+#about-img .ab-img-2{
+    z-index: 3;
 }
 
 /* ########## */
