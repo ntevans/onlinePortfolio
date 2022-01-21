@@ -77,7 +77,7 @@
       </nav>
       <!-- Contact Bar -->
       <div class="conbar">
-        <ul class="conbar-con">
+        <ul class="conbar-con visible" id="contact-bar">
           <li class="con-item">
             <a href="https://nicholas-evans.hashnode.dev/" target="_blank" rel="noopener noreferrer" class="con-link">
               <svg class="svg-sec" version="1.0" xmlns="http://www.w3.org/2000/svg" width="674.000000pt" height="674.000000pt" viewBox="0 0 674.000000 674.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,674.000000) scale(0.100000,-0.100000)" stroke="none"> <path class="svg-pri" d="M3210 6734 c-323 -41 -620 -168 -860 -370 -129 -108 -1972 -1962 -2031 -2044 -150 -204 -239 -405 -291 -655 -33 -158 -33 -432 0 -590 58 -276 173 -517 348 -725 108 -129 1962 -1972 2044 -2031 204 -150 405 -239 655 -291 158 -33 432 -33 590 0 276 58 517 173 725 348 129 108 1972 1962 2031 2044 150 204 239 406 291 655 32 159 32 433 0 590 -58 276 -173 517 -348 725 -108 129 -1962 1972 -2044 2031 -283 208 -573 307 -915 314 -88 2 -176 1 -195 -1z m365 -279 c220 -46 430 -141 625 -284 82 -59 1807 -1773 1914 -1901 174 -207 293 -454 345 -719 26 -131 26 -231 0 -362 -47 -239 -139 -446 -288 -649 -59 -82 -1773 -1807 -1901 -1914 -207 -174 -454 -293 -719 -345 -131 -26 -231 -26 -362 0 -239 47 -446 139 -649 288 -82 59 -1807 1773 -1914 1901 -227 270 -378 656 -363 930 14 266 122 550 306 800 59 82 1773 1807 1901 1914 203 170 447 289 710 345 113 24 269 23 395 -4z"/><path d="M2385 5870 c-36 -15 -145 -128 -161 -166 -20 -49 -11 -95 27 -139 34 -38 77 -51 135 -41 46 9 169 131 183 181 11 41 0 99 -26 127 -36 41 -110 59 -158 38z"/><path d="M1965 5446 c-16 -8 -263 -247 -547 -533 -383 -383 -518 -525 -520 -543 -4 -73 16 -118 65 -149 40 -24 87 -27 125 -7 15 8 259 248 543 533 537 538 538 540 522 604 -21 86 -109 130 -188 95z"/><path class="svg-pri" d="M3180 4735 c-302 -45 -561 -175 -775 -390 -236 -235 -364 -511 -395 -850 -37 -410 104 -800 395 -1090 195 -196 431 -322 710 -380 111 -24 409 -24 520 0 108 22 268 76 352 119 308 154 564 440 677 754 85 238 108 507 61 737 -22 107 -76 267 -119 352 -148 294 -421 547 -718 664 -220 87 -481 118 -708 84z m298 -265 c137 -15 243 -45 367 -104 482 -231 726 -757 594 -1279 -28 -111 -113 -285 -188 -384 -396 -524 -1163 -588 -1640 -138 -98 93 -162 180 -226 310 -158 317 -161 657 -11 970 183 381 548 617 981 633 17 1 72 -3 123 -8z"/></g></svg>
@@ -281,7 +281,26 @@
 
         <!-- Contact -->
         <div id="contact">
+          <div class="container">
+            <h2><span>CONTACT ME</span></h2>
+            <div class="links">
+              <div>
 
+              </div>
+              <div>
+                
+              </div>
+              <div>
+                
+              </div>
+              <div>
+                
+              </div>
+              <div>
+                
+              </div>
+            </div>
+          </div>
         </div>
     
         <script src="js/particles.js"></script>
@@ -346,8 +365,17 @@
         else {  $('#nav-3').addClass('gray');  }
 
         if (scrollPercent > 90) {  
-          $('#nav-4').removeClass('gray');  }
-        else {  $('#nav-4').addClass('gray');  }
+          $('#nav-4').removeClass('gray');
+          $('#contact-bar').addClass('invisible');
+          $('#contact-bar').removeClass('visible');
+          $('#contact-bar').css("pointer-events", "none");
+        }
+        else {
+          $('#nav-4').addClass('gray');
+          $('#contact-bar').addClass('visible');
+          $('#contact-bar').removeClass('invisible');
+          $('#contact-bar').css("pointer-events", "all");
+        }
       });
 
       $(document).on('click', 'a[href^="#"]', function (event) {
