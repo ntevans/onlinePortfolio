@@ -284,8 +284,13 @@
           
           <div class="container">
             <h2><span>CONTACT ME</span></h2>
-            
-            <form action="https://formsubmit.co/502ed70583ef81d42bb0f65ad8279dab" method="POST">      
+            <form action="https://formsubmit.co/502ed70583ef81d42bb0f65ad8279dab" method="POST">  
+              <!-- Honeypot  -->
+              <input type="text" name="_honey" style="display: none;">
+
+              <!-- Disable Captcha -->
+              <input type="hidden" name="_captcha" value="false">
+              
               <input name="name" type="text" class="feedback-input" placeholder="Name" autocomplete="off"/>   
               <input name="email" type="text" class="feedback-input" placeholder="Email" autocomplete="off"/>
               <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
