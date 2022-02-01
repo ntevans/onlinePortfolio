@@ -330,6 +330,8 @@
             c = $(window).height();
 
         var scrollPercent = (s / (d - c)) * 100;
+        console.clear()
+        console.log(scrollPercent)
 
         if (scrollPercent > 15) {
           $('#cover').addClass('visible');
@@ -352,19 +354,19 @@
           $('#learn-more-button').css("pointer-events", "all");
         }
 
-        if (scrollPercent > 15 && scrollPercent < 40) {  
+        if (scrollPercent > 15 && scrollPercent < 34) {  
           $('#nav-1').removeClass('gray');  }
         else {  $('#nav-1').addClass('gray');  }
 
-        if (scrollPercent > 40 && scrollPercent < 65) {  
+        if (scrollPercent > 34 && scrollPercent < 55) {  
           $('#nav-2').removeClass('gray');  }
         else {  $('#nav-2').addClass('gray');  }
 
-        if (scrollPercent > 65 && scrollPercent < 90) {  
+        if (scrollPercent > 55 && scrollPercent < 92) {  
           $('#nav-3').removeClass('gray');  }
         else {  $('#nav-3').addClass('gray');  }
 
-        if (scrollPercent > 90) {  
+        if (scrollPercent > 92) {  
           $('#nav-4').removeClass('gray');
         }
         else {

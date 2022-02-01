@@ -201,6 +201,8 @@ scrollbar-color: transparent ;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-bottom: 1rem;
+
 }
 
 #about .container{
@@ -209,7 +211,7 @@ scrollbar-color: transparent ;
     display: grid;
     grid-template-columns: 3fr 2fr;
     width: 70rem;
-    height: 30rem;
+    height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -260,6 +262,7 @@ scrollbar-color: transparent ;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 4rem;
 }
 
 #skills .container{
@@ -273,13 +276,14 @@ scrollbar-color: transparent ;
 #skills #skill-title{
     width: 40rem;
     margin: auto;
+    padding-top: 1rem;
 }
 
 #skills #skill-grid{
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100%;
+    height: auto;
     margin-top: 3rem;
 }
 
@@ -332,16 +336,16 @@ scrollbar-color: transparent ;
 #projects{
     display: flex;
     justify-content: center;
-    height: 200vh;
+    height: 180vh;
 }
 
 #projects .container{
     position: absolute;
     justify-content: center;
     text-align: center;
-    margin-top: 10rem;
-    width: 70rem;
-    height: 50rem;
+    margin-top: 2rem;
+    width: 60rem;
+    height: auto;
 }
 
 #projects #projects-title{
@@ -350,7 +354,7 @@ scrollbar-color: transparent ;
 
 .showcase {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 17em;
     margin: 1em auto;
     overflow: hidden;
