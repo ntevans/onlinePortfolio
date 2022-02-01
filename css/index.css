@@ -480,16 +480,3 @@ scrollbar-color: transparent ;
     width: 70rem;
     height: 50rem;
 }
-
-#contact .links{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    border: 5px solid green;
-}
-
-#contact .links div{
-    height: 10rem;
-    width: 10rem;
-    border: 5px solid red;
-}
