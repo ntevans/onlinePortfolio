@@ -114,6 +114,7 @@ scrollbar-color: transparent ;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     pointer-events: all;
+    text-decoration: none;
 }
 
 .intro a:hover{
@@ -251,6 +252,16 @@ scrollbar-color: transparent ;
 
 #about-img .img-container{
     height: 20rem; width: 20rem;
+}
+
+#about a{
+    text-decoration: none;
+    color: #a9fffb;
+    transition: .1s;
+}
+
+#about a:hover{
+    color: #feadff;
 }
 
 /* ########## */
