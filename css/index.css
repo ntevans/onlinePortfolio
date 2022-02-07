@@ -363,6 +363,10 @@ scrollbar-color: transparent ;
     margin-bottom: 5rem;
 }
 
+#projects h1{
+    color: #feafff;
+}
+
 .showcase {
     position: relative;
     width: 100%;
@@ -440,9 +444,6 @@ scrollbar-color: transparent ;
     background: var(--darker-purple);
     color: #fff;
 }
-.showcase:hover .desc:after {
-    border-color: transparent #202426 transparent transparent;
-}
 .showcase--inverted .thumbnail {
     right: 0;
     left: 300px;
@@ -460,21 +461,18 @@ scrollbar-color: transparent ;
     left: 325px;
     right: -25px;
 }
-.showcase--inverted:hover .desc:after {
-    border-color: transparent transparent transparent #202426;
-}
 .btn {
     padding: 1em 2em;
     border: 0.15em solid var(--aqua-whi);
     color: var(--aqua-whi);
     text-decoration: none;
     font-weight: 700;
+    cursor: pointer;
     transition: background 250ms;
 }
 .btn:hover {
     background: rgba(0, 0, 0, 0.6);
 }
-
 /* ########### */
 /* # CONTACT # */
 /* ########### */

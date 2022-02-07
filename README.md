@@ -6,7 +6,7 @@ My personal portfolio that I created using HTML, CSS, and JavaScript. This websi
 - [X] Navbar
 - [X] Contact Navbar
 - [X] Landing Screen
-- [ ] About Section
+- [X] About Section
 - [X] Skills Section
 - [ ] Projects Section
 - [X] Contact Section
