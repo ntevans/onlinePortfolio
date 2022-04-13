@@ -387,15 +387,25 @@ scrollbar-color: transparent ;
     background-position: 50% 50%;
     background-size: cover;
     transition: right 250ms ease, left 250ms ease;
+    opacity: 60%;
 }
-.thumbnail--awesome {
+.thumbnail--project1 {
     background-image: url();
+}
+.thumbnail--project2 {
+    background-image: url(/img/projects/project_dungeon.png);
+}
+.thumbnail--project3 {
+    background-image: url(/img/projects/project_piano.png);
+}
+.thumbnail--project4 {
+    background-image: url(/img/projects/project_website.png);
 }
 .thumbnail__overlay {
     position: relative;
     padding-top: 8em;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(17, 0, 26, 0.8);
     text-align: center;
     opacity: 0;
     transition: opacity 250ms ease;
