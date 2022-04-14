@@ -390,7 +390,7 @@ scrollbar-color: transparent ;
     opacity: 60%;
 }
 .thumbnail--project1 {
-    background-image: url();
+    background-image: url(/img/projects/project_desktop.png);
 }
 .thumbnail--project2 {
     background-image: url(/img/projects/project_dungeon.png);
