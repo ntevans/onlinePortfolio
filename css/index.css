@@ -390,16 +390,16 @@ scrollbar-color: transparent ;
     opacity: 60%;
 }
 .thumbnail--project1 {
-    background-image: url(/img/projects/project_desktop.png);
+    background-image: url(../img/projects/project_desktop.png);
 }
 .thumbnail--project2 {
-    background-image: url(/img/projects/project_dungeon.png);
+    background-image: url(../img/projects/project_dungeon.png);
 }
 .thumbnail--project3 {
-    background-image: url(/img/projects/project_piano.png);
+    background-image: url(../img/projects/project_piano.png);
 }
 .thumbnail--project4 {
-    background-image: url(/img/projects/project_website.png);
+    background-image: url(../img/projects/project_website.png);
 }
 .thumbnail__overlay {
     position: relative;
