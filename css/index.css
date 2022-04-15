@@ -62,12 +62,6 @@ scrollbar-color: transparent ;
     opacity: 0%;
 }
 
-@media only screen and (max-width: 600px) {
-    #particles-js{
-        margin-left: 0;
-    }
-}
-
 /* ######## */
 /* # HOME # */
 /* ######## */
@@ -168,31 +162,6 @@ scrollbar-color: transparent ;
     z-index: 1;
 }
 
-@media only screen and (max-width: 600px) {
-    #home{
-        text-align: center;
-    }
-
-    .intro h1{
-        font-size: 3.5rem;
-        margin-top: 3rem;
-    }
-
-    .intro h2{
-        font-size: 1rem;
-        border: 5px solid transparent;
-        margin-top: -1rem;
-    }
-
-    #learn-more{
-        margin-bottom: 5rem;
-    }
-
-    #particles-js{
-        margin: 0;
-    }
-}
-
 /* ######### */
 /* # ABOUT # */
 /* ######### */
@@ -213,13 +182,6 @@ scrollbar-color: transparent ;
     grid-template-columns: 3fr 2fr;
     width: 70rem;
     height: auto;
-}
-
-@media only screen and (max-width: 600px) {
-    #about-container{
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
 }
 
 #about-txt{
