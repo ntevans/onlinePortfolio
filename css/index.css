@@ -310,19 +310,6 @@ scrollbar-color: transparent ;
     grid-template-columns: 1fr 1fr;
 }
 
-@media only screen and (max-width: 600px) {
-    #skills #skill-grid{
-        grid-template-columns: 1fr;
-        width: 50%;
-    }
-
-    #skills .skill-logo{
-        width: 10%;
-        filter: grayscale(0) opacity(1) drop-shadow(0px 0px 8px #fd81ffa6);
-        color: #ffffff;
-    }
-}
-
 #skills .skill-logo{
     filter: grayscale(100%) opacity(0.7);
     transition: 0.25s;
@@ -439,6 +426,9 @@ scrollbar-color: transparent ;
     border-color: transparent #100a1d transparent transparent;
     content: "";
     transition: border-color 250ms;
+}
+.mobileLinks{
+    display: none;
 }
 .showcase:hover .thumbnail {
     right: 325px;
